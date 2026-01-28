@@ -1,11 +1,11 @@
 // src/api/productDetail.js
 
-const API_URL = "http://localhost:8080/api";
+import { API_BASE_URL } from '../config/api'; // Import variabel
 
 export const getProductById = async (productId) => {
   try {
     // Endpoint sesuai permintaan Anda
-    const response = await fetch(`${API_URL}/products?ids=${productId}`, {
+    const response = await fetch(`${API_BASE_URL}/products?ids=${productId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

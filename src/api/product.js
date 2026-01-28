@@ -1,12 +1,12 @@
 // src/api/product.js
 
-const API_URL = "http://localhost:8080/api";
+import { API_BASE_URL } from '../config/api'; // Import variabel
 
 export const getProducts = async (limit = 10, offset = 0) => {
   try {
     console.log(`Mengambil produk: limit=${limit}, offset=${offset}`);
     
-    const response = await fetch(`${API_URL}/products/list?limit=${limit}&offset=${offset}`, {
+    const response = await fetch(`${API_BASE_URL}/products/list?limit=${limit}&offset=${offset}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
