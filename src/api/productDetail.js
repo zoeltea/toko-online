@@ -8,6 +8,7 @@ export const getProductById = async (productId) => {
     const response = await fetch(`${API_BASE_URL}/products?ids=${productId}`, {
       method: 'GET',
       headers: {
+        'ngrok-skip-browser-warning': 'true',
         'Content-Type': 'application/json',
       },
     });

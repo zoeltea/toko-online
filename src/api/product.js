@@ -10,6 +10,7 @@ export const getProducts = async (limit = 10, offset = 0) => {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
+        'ngrok-skip-browser-warning': 'true'
       },
     });
 
