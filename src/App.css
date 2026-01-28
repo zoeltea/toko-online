@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tambahan opsional agar scroll bar terlihat rapi */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f8fafc; /* Slate 50 */
+}
